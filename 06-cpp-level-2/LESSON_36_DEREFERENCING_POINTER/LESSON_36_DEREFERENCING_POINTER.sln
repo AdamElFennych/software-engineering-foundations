@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LESSON_36_DEREFERENCING_POINTER", "LESSON_36_DEREFERENCING_POINTER.vcxproj", "{0C7AD9AB-19EC-45F3-B392-CDCDEC206F3F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C7AD9AB-19EC-45F3-B392-CDCDEC206F3F}.Debug|x64.ActiveCfg = Debug|x64
+		{0C7AD9AB-19EC-45F3-B392-CDCDEC206F3F}.Debug|x64.Build.0 = Debug|x64
+		{0C7AD9AB-19EC-45F3-B392-CDCDEC206F3F}.Debug|x86.ActiveCfg = Debug|Win32
+		{0C7AD9AB-19EC-45F3-B392-CDCDEC206F3F}.Debug|x86.Build.0 = Debug|Win32
+		{0C7AD9AB-19EC-45F3-B392-CDCDEC206F3F}.Release|x64.ActiveCfg = Release|x64
+		{0C7AD9AB-19EC-45F3-B392-CDCDEC206F3F}.Release|x64.Build.0 = Release|x64
+		{0C7AD9AB-19EC-45F3-B392-CDCDEC206F3F}.Release|x86.ActiveCfg = Release|Win32
+		{0C7AD9AB-19EC-45F3-B392-CDCDEC206F3F}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE74D101-9CCF-4E8C-9AB5-166450634891}
+	EndGlobalSection
+EndGlobal
