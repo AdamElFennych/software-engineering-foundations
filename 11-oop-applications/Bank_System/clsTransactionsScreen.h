@@ -1,4 +1,5 @@
 #pragma once
+#include "clsDepositScreen.h"
 #include "clsInputValidate.h"
 #include "clsScreen.h"
 #include <iomanip>
@@ -27,7 +28,8 @@ class clsTransactionsScreen : protected clsScreen
 
     static void _ShowDepositScreen()
     {
-        cout << "\n Deposit Screen will be here.\n";
+        // cout << "\n Deposit Screen will be here.\n";
+        clsDepositScreen::ShowDepositScreen();
     }
 
     static void _ShowWithdrawScreen()
@@ -82,7 +84,7 @@ class clsTransactionsScreen : protected clsScreen
     static void ShowTransactionsMenue()
     {
         system("cls");
-        _DrawScreenHeader("\t  Transactions Screen");
+        _DrawScreenHeader("\tTransactions Screen");
 
         cout << setw(37) << left << "" << "===========================================\n";
         cout << setw(37) << left << "" << "\t\t  Transactions Menue\n";
