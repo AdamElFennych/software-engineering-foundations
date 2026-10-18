@@ -5,6 +5,7 @@
 #include "clsFindClientScreen.h"
 #include "clsInputValidate.h"
 #include "clsScreen.h"
+#include "clsTransactionsScreen.h"
 #include "clsUpdateClientScreen.h"
 #include <iostream>
 
@@ -73,7 +74,8 @@ class clsMainScreen : protected clsScreen
 
     static void _ShowTransactionsMenue()
     {
-        cout << "\nTransactions Menue Will be here...\n";
+        // cout << "\nTransactions Menue Will be here...\n";
+        clsTransactionsScreen::ShowTransactionsMenue();
     }
 
     static void _ShowManageUsersMenue()
@@ -123,11 +125,13 @@ class clsMainScreen : protected clsScreen
         case enMainMenueOptions::eShowTransactionsMenue:
             system("cls");
             _ShowTransactionsMenue();
+            _GoBackToMainMenue();
             break;
 
         case enMainMenueOptions::eManageUsers:
             system("cls");
             _ShowManageUsersMenue();
+            _GoBackToMainMenue();
             break;
 
         case enMainMenueOptions::eExit:
