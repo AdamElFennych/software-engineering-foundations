@@ -1,7 +1,7 @@
 #pragma once
+#include "clsClientListScreen.h"
 #include "clsInputValidate.h"
 #include "clsScreen.h"
-#include <iomanip>
 #include <iostream>
 
 using namespace std;
@@ -39,7 +39,8 @@ class clsMainScreen : protected clsScreen
 
     static void _ShowAllClientsScreen()
     {
-        cout << "\nClient List Screen Will be here...\n";
+        //  cout << "\nClient List Screen Will be here...\n";
+        clsClientListScreen::ShowClientsList();
     }
 
     static void _ShowAddNewClientsScreen()

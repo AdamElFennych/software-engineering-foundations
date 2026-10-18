@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../LESSON_05_LIST_CLIENTS/clsBankClient.h"
-#include "../LESSON_07_MAIN_SCREEN/clsScreen.h"
+#include "clsBankClient.h"
+#include "clsScreen.h"
 #include <iomanip>
 #include <iostream>
 

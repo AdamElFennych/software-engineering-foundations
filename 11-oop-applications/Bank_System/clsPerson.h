@@ -76,16 +76,4 @@ class clsPerson
     {
         return _FirstName + " " + _LastName;
     }
-
-    void Print()
-    {
-        cout << "\nInfo:";
-        cout << "\n___________________";
-        cout << "\nFirstName: " << _FirstName;
-        cout << "\nLastName : " << _LastName;
-        cout << "\nFull Name: " << FullName();
-        cout << "\nEmail    : " << _Email;
-        cout << "\nPhone    : " << _Phone;
-        cout << "\n___________________\n";
-    }
 };
