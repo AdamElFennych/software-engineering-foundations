@@ -4,6 +4,7 @@
 #include "clsDeleteClientScreen.h"
 #include "clsInputValidate.h"
 #include "clsScreen.h"
+#include "clsUpdateClientScreen.h"
 #include <iostream>
 
 using namespace std;
@@ -59,7 +60,8 @@ class clsMainScreen : protected clsScreen
 
     static void _ShowUpdateClientScreen()
     {
-        cout << "\nUpdate Client Screen Will be here...\n";
+        // cout << "\nUpdate Client Screen Will be here...\n";
+        clsUpdateClientScreen::ShowUpdateClientScreen();
     }
 
     static void _ShowFindClientScreen()
