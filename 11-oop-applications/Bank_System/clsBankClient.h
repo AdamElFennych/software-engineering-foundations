@@ -182,20 +182,23 @@ class clsBankClient : public clsPerson
     }
     __declspec(property(get = GetAccountBalance, put = SetAccountBalance)) float AccountBalance;
 
-    void Print()
-    {
-        cout << "\nClient Card:";
-        cout << "\n___________________";
-        cout << "\nFirstName   : " << FirstName;
-        cout << "\nLastName    : " << LastName;
-        cout << "\nFull Name   : " << FullName();
-        cout << "\nEmail       : " << Email;
-        cout << "\nPhone       : " << Phone;
-        cout << "\nAcc. Number : " << _AccountNumber;
-        cout << "\nPassword    : " << _PinCode;
-        cout << "\nBalance     : " << _AccountBalance;
-        cout << "\n___________________\n";
-    }
+    /*
+       No UI Related code iside object.
+     void Print()
+     {
+         cout << "\nClient Card:";
+         cout << "\n___________________";
+         cout << "\nFirstName   : " << FirstName;
+         cout << "\nLastName    : " << LastName;
+         cout << "\nFull Name   : " << FullName();
+         cout << "\nEmail       : " << Email;
+         cout << "\nPhone       : " << Phone;
+         cout << "\nAcc. Number : " << _AccountNumber;
+         cout << "\nPassword    : " << _PinCode;
+         cout << "\nBalance     : " << _AccountBalance;
+         cout << "\n___________________\n";
+
+     }*/
 
     static clsBankClient Find(string AccountNumber)
     {
@@ -326,7 +329,7 @@ class clsBankClient : public clsPerson
         return _LoadClientsDataFromFile();
     }
 
-    static float GetTotalBalances()
+    static double GetTotalBalances()
     {
         vector<clsBankClient> vClients = clsBankClient::GetClientsList();
 
