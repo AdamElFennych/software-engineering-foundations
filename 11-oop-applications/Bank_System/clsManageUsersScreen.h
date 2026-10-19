@@ -1,5 +1,6 @@
 #pragma once
 #include "clsInputValidate.h"
+#include "clsListUsersScreen.h"
 #include "clsScreen.h"
 #include <iomanip>
 #include <iostream>
@@ -36,7 +37,8 @@ class clsManageUsersScreen : protected clsScreen
 
     static void _ShowListUsersScreen()
     {
-        cout << "\nList Users Screen Will Be Here.\n";
+        // cout << "\nList Users Screen Will Be Here.\n";
+        clsListUsersScreen::ShowUsersList();
     }
 
     static void _ShowAddNewUserScreen()
