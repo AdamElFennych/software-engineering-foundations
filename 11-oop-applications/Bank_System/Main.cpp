@@ -1,10 +1,10 @@
-#include "clsMainScreen.h"
+#include "clsLoginScreen.h"
 #include <iostream>
 
 int main()
 
 {
-    clsMainScreen::ShowMainMenue();
+    clsLoginScreen::ShowLoginScreen();
 
     system("pause>0");
     return 0;
