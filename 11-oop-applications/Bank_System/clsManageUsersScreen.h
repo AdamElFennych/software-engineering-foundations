@@ -1,5 +1,6 @@
 #pragma once
 #include "clsAddNewUserScreen.h"
+#include "clsDeleteUserScreen.h"
 #include "clsInputValidate.h"
 #include "clsListUsersScreen.h"
 #include "clsScreen.h"
@@ -50,7 +51,8 @@ class clsManageUsersScreen : protected clsScreen
 
     static void _ShowDeleteUserScreen()
     {
-        cout << "\nDelete User Screen Will Be Here.\n";
+        // cout << "\nDelete User Screen Will Be Here.\n";
+        clsDeleteUserScreen::ShowDeleteUserScreen();
     }
 
     static void _ShowUpdateUserScreen()
