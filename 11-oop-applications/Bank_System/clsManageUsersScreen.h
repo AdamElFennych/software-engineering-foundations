@@ -4,6 +4,7 @@
 #include "clsInputValidate.h"
 #include "clsListUsersScreen.h"
 #include "clsScreen.h"
+#include "clsUpdateUserScreen.h"
 #include <iomanip>
 #include <iostream>
 
@@ -57,7 +58,8 @@ class clsManageUsersScreen : protected clsScreen
 
     static void _ShowUpdateUserScreen()
     {
-        cout << "\nUpdate User Screen Will Be Here.\n";
+        // cout << "\nUpdate User Screen Will Be Here.\n";
+        clsUpdateUserScreen::ShowUpdateUserScreen();
     }
 
     static void _ShowFindUserScreen()
