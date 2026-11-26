@@ -1,6 +1,7 @@
 #pragma once
 #include "clsAddNewUserScreen.h"
 #include "clsDeleteUserScreen.h"
+#include "clsFindUserScreen.h"
 #include "clsInputValidate.h"
 #include "clsListUsersScreen.h"
 #include "clsScreen.h"
@@ -64,7 +65,8 @@ class clsManageUsersScreen : protected clsScreen
 
     static void _ShowFindUserScreen()
     {
-        cout << "\nFind User Screen Will Be Here.\n";
+        // cout << "\nFind User Screen Will Be Here.\n";
+        clsFindUserScreen::ShowFindUserScreen();
     }
 
     static void _PerformManageUsersMenueOption(enManageUsersMenueOptions ManageUsersMenueOption)
