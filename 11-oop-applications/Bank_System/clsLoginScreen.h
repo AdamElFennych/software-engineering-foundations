@@ -44,6 +44,7 @@ class clsLoginScreen : protected clsScreen
 
         } while (LoginFaild);
 
+        CurrentUser.RegisterLogIn();
         clsMainScreen::ShowMainMenue();
         return true;
     }

@@ -1,4 +1,5 @@
 #pragma once
+#include "clsDate.h"
 #include "clsPerson.h"
 #include "clsString.h"
 #include <fstream>
@@ -22,6 +23,16 @@ class clsUser : public clsPerson
     int _Permissions;
 
     bool _MarkedForDelete = false;
+
+    string _PrepareLogInRecord(string Seperator = "#//#")
+    {
+        string LoginRecord = "";
+        LoginRecord += clsDate::GetSystemDateTimeString() + Seperator;
+        LoginRecord += UserName + Seperator;
+        LoginRecord += Password + Seperator;
+        LoginRecord += to_string(Permissions);
+        return LoginRecord;
+    }
 
     static clsUser _ConvertLinetoUserObject(string Line, string Seperator = "#//#")
     {
@@ -338,5 +349,20 @@ class clsUser : public clsPerson
             return true;
         else
             return false;
+    }
+
+    void RegisterLogIn()
+    {
+        string stDataLine = _PrepareLogInRecord();
+
+        fstream MyFile;
+        MyFile.open("LoginRegister.txt", ios::out | ios::app);
+
+        if (MyFile.is_open())
+        {
+            MyFile << stDataLine << endl;
+
+            MyFile.close();
+        }
     }
 };
